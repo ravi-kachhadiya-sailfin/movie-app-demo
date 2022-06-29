@@ -1,0 +1,131 @@
+.movieDetailsMainLayout{
+    margin: 0px 0px;
+    color: white;
+    background-size: cover;
+}
+
+.movieDetailsLayout{
+    padding: 0px; 
+    padding-left: 20px;
+    width: 100%;
+    height: max-content;
+    display: flex;
+    justify-content: space-between;
+}
+
+.poster{
+    margin: 30px 10px;
+    width:310px;
+    height: 450px;
+}
+
+.poster > img{
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+
+.movieDetails {
+    margin-left: 40px;
+    width: 75%;
+    right: 0;
+}
+
+.title{
+    font-size: 1.5em;
+    width: 93%;
+}
+
+.title > h2{
+    margin: 0px;
+    padding: 0px;
+}
+
+.title > h2 > span{
+    font-weight: 500;
+    font-size: 2.2rem;
+}
+
+.details{
+    font-size: 1em;
+}
+
+.functions{
+    display: flex;
+    align-items: center;
+}
+
+.rating{
+    display: flex;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background-color: #081c22;
+    font-size: 2.2em;
+    padding: 0px;
+    margin: 0px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Teko', sans-serif;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.rating > p{
+    text-align: center;
+    padding:2px;
+    margin: 0px;
+    height: 48px;
+    width: 48px;
+    border-radius: 50%;
+    border:3px solid #3dd07a;
+}
+
+.userScore{
+    width: min-content;
+    font-size: 1em;
+    font-weight: 600;
+    margin-right: 20px;
+    margin-left: 5px;
+}
+
+.icons{
+    margin: 0px 15px;
+}
+
+.playTrailer{
+    /* margin: 0px 15px; */
+    cursor: pointer;
+}
+
+.tagLine{
+    margin: 10px 0px 0px 0px;
+}
+
+.tagLine{
+    font-weight: 300;
+    font-size: 1.1em;
+    color: honeydew;
+}
+
+.overviewHanding{
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+.overview{
+    font-size: 1em;
+    font-weight: 400;
+    width: 93%;
+}
+
+.backgroundLayer{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

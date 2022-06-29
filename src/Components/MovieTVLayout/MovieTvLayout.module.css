@@ -1,0 +1,12 @@
+.movieTvLayout{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.itemLayout{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    flex-wrap: wrap;
+}

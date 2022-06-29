@@ -1,24 +1,37 @@
-import logo from './logo.svg';
+import React from 'react';
+import { Router } from 'react-router';
+import { Route, Switch } from 'react-router-dom';
+
 import './App.css';
+import Movie from './Components/Movie/Movie';
+import TvShow from './Components/TvShow/TvShow';
+import Navbar from './Components/Navbar/Navbar';
+import MovieDetails from './Components/MovieDetails/MovieDetails';
+import Search from './Components/Search/Search';
+// import Check from './Components/Check/check';
+import history from './utils/history';
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router history={history}>
+      <div className="App" >
+        <Navbar />
+        <Switch>
+          {/* <Route path='/' component={App} /> */}
+          <React.Fragment>
+            <Route path='/movie' component={Movie} exact />
+            <Route path='/tv' component={TvShow} exact />
+            <Route path='/movie/:title' component={MovieDetails} exact />
+            <Route path='/tv/:title' component={MovieDetails} exact />
+            <Route path='/search' component={Search} exact />
+            <Route path='/search/:dataOf' component={Search} exact />
+            {/* <Route path='/check' component={Check} /> */}
+          </React.Fragment>
+        </Switch>
+      </div>
+    </Router>
+
   );
 }
 
